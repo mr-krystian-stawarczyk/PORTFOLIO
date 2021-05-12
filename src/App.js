@@ -26,7 +26,7 @@ function App() {
 							stroke: {
 								width: 2,
 								color: "#f9ab00",
-								opacity: 0.2,
+								opacity: 0.1,
 							},
 						},
 					},

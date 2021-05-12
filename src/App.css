@@ -7,6 +7,8 @@
 	--primary-red: #ef4035;
 	--primary-hover-red: #f33501;
 	--primary-light-grey: #c5c5c5;
+	--primary-dark-grey: #666666;
+	--primary-grey: #ccd1d9;
 }
 
 body {
@@ -15,10 +17,11 @@ body {
 
 /******************* SYLING NAVBAR*********************************/
 nav {
-	z-index: 2;
+	z-index: 1;
 }
 .logo {
 	width: 16.25rem;
+	margin-top: 0.5rem;
 }
 
 /******************* MENU LINKS ************************************/
@@ -36,7 +39,14 @@ nav ul li {
 	margin-right: 0.75rem;
 	margin-left: 0.75rem;
 	color: var(--primary-white) !important;
-	border-top: 0.1875rem solid var(--primary-dark);
+	border-bottom: 0.1875rem solid var(--primary-dark);
+	border-radius: 0.1rem;
+}
+
+@media screen and (max-width: 768px) {
+	.navbar-nav > li > a {
+		border: hidden;
+	}
 }
 
 .navbar-brand {
@@ -52,11 +62,11 @@ nav ul li {
 
 .navbar-nav > li > a.active,
 .navbar-nav > li > a:focus {
-	border-top: 0.1875rem solid var(--primary-orange);
+	border-bottom: 0.1875rem solid var(--primary-orange);
 }
 
 .navbar-nav > li > a:hover {
-	border-top: 0.1875rem solid var(--primary-orange);
+	border-bottom: 0.1875rem solid var(--primary-orange);
 }
 
 /******************* SYLING HEADER*********************************/
@@ -147,6 +157,7 @@ nav ul li {
 	border-radius: 50%;
 	padding: 0.3rem;
 	border: 1px solid var(--primary-orange);
+	margin-top: 1.5rem;
 }
 
 .about-heading {
@@ -196,7 +207,7 @@ nav ul li {
 	height: 16rem;
 	border-bottom: 0.3125rem solid var(--primary-orange);
 	padding: 0.625rem;
-	margin: 1.875rem;
+	margin: 0.875rem;
 	background: var(--primary-white);
 }
 
@@ -213,4 +224,99 @@ nav ul li {
 
 .services .box:hover .circle {
 	background: var(--primary-white);
+}
+
+/*-------------------------Experience ------------------- */
+.experience {
+	padding: 0.7rem;
+}
+
+.experience-wrapper {
+	position: relative;
+	padding: 3.125rem 0;
+	overflow: hidden;
+}
+
+.experience h1 {
+	text-transform: uppercase;
+	color: var(--primary-orange);
+}
+
+.experience-wrapper::before {
+	position: absolute;
+	content: "";
+	top: 0;
+	left: 50%;
+	margin-left: -0.00625rem;
+	width: 0.125rem;
+	height: 100%;
+	background: var(--primary-grey);
+	z-index: 1;
+}
+
+.timeline-block {
+	width: calc(50% + 0.5rem);
+	display: flex;
+	justify-content: space-between;
+	clear: both;
+}
+
+.timeline-block-right {
+	float: right;
+}
+
+.timeline-block-left {
+	float: left;
+	direction: rtl;
+}
+
+.marker {
+	width: 1rem;
+	height: 1rem;
+	border-radius: 50%;
+	border: 0.3125rem solid var(--primary-dark);
+	background: var(--primary-orange);
+	margin-top: 0.0625rem;
+	z-index: 3;
+}
+
+.timeline-content {
+	width: 95%;
+	padding: 0 0.9375rem;
+	color: var(--primary-dark-grey);
+	direction: ltr;
+}
+
+.timeline-content h3 {
+	margin-top: 0.3125rem;
+	color: var(--primary-red);
+	font-weight: 900;
+}
+
+/*-------------------- MEDIA TIMELINE----------------------*/
+@media (max-width: 768px) {
+	.experience .container {
+		padding-left: 0;
+		font-weight: 700;
+	}
+
+	.experience-wrapper::before {
+		left: 0.5rem;
+		margin-bottom: 1.875rem;
+	}
+
+	.timeline-content h3 {
+		font-weight: 700;
+	}
+
+	.timeline-block-right {
+		float: none;
+		width: 100%;
+	}
+
+	.timeline-block-left {
+		float: none;
+		direction: ltr;
+		width: 100%;
+	}
 }
