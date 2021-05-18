@@ -7,8 +7,9 @@ import About from "./components/About";
 import Services from "./components/Services";
 import Experience from "./components/Experience";
 import Portfolio from "./components/Portfolio";
-import Testimonials from "./components/Testimonials";
+import Progress from "./components/Progress";
 import Contacts from "./components/Contacts";
+import Footer from "./components/Footer";
 
 function App() {
 	return (
@@ -37,12 +38,13 @@ function App() {
 			/>
 			<Navbar />
 			<Header />
-			<About /> *
+			<About />
 			<Services />
 			<Experience />
 			<Portfolio />
-			<Testimonials />
+			<Progress />
 			<Contacts />
+			<Footer />
 		</>
 	);
 }

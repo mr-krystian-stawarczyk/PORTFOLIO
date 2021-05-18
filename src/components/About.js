@@ -3,7 +3,7 @@ import pic from "../hehe.jpg";
 
 const About = () => {
 	return (
-		<div className="container py-5">
+		<div id="about" className="container py-5">
 			<div className="row">
 				<div className="col-lg-6 col-xm-12">
 					{" "}
@@ -13,25 +13,17 @@ const About = () => {
 				</div>
 				<div className="col-lg-6 col-xm-12">
 					<h1 className="about-heading"> About me</h1>
-					<p>
-						Hej jestem Krystian i tutaj napisze cos o sobie Ipsum ipsum ex eu
-						incididunt tempor ea nulla labore amet pariatur id duis velit
-						laboris. Culpa duis sunt consequat ut nulla id dolore proident enim
-						do eiusmod minim consequat. Ad sit ipsum nisi ut enim do minim
-						mollit. Commodo enim ullamco ut consequat minim magna. Non elit
-						cillum eu consectetur sit do proident occaecat excepteur adipisicing
-						minim consequat ipsum. Aute velit labore ea nulla nulla est non amet
-						incididunt voluptate velit. In excepteur et ex ipsum laborum amet
-						consequat dolore Lorem labore excepteur. Non non sint do duis
-						commodo. In consequat est sit esse. Nostrud ad cillum aliqua
-						voluptate. Dolor in duis est duis id duis commodo deserunt. Laborum
-						nisi ut qui reprehenderit cillum fugiat aute nisi amet duis
-						incididunt elit reprehenderit. In nulla fugiat nisi aliquip
-						reprehenderit in in. Dolor sint dolor mollit magna aliquip. Lorem
-						occaecat non est proident sint ullamco nostrud minim amet deserunt.
-						Amet veniam culpa occaecat dolor voluptate. Amet anim aliqua
-						consectetur consequat eiusmod in ipsum tempor incididunt culpa. In
-						incididunt aute minim ad sunt non.
+					<p className="about-paragraph">
+						Hello my name is Krystian, Im 29 and i live in Nettetal. My hobby is
+						building new websites and mountain bikes. I started my coding
+						journey more than year ago, and from that time programming is my
+						hobby, carrer path, and another challanges for me. <br /> My life is
+						about curiosity and learning new skills, which is so exciting about
+						coding journey. I love testing new features and libraries. Next step
+						for me is to work on fascinating projects with team to learn even
+						more from daily tasks. <br />
+						If you want to know more about my experiences, please do not
+						hesitate to scroll down.
 					</p>
 				</div>
 			</div>

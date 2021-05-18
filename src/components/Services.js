@@ -10,28 +10,28 @@ const Services = () => {
 			<div className="container">
 				<div className="row ">
 					<div className=" col-md-5 col-sm-6">
-						<div className="box ">
+						<div className="box " id="box-1">
 							<div className="circle">
 								<FontAwesomeIcon className="icon" icon={faDesktop} size="2x" />
 							</div>
-							<h3> Web design</h3>
-							<p>I approach project indyvidualy</p>
+							<h3> UI/UX Design </h3>
+							<p>I approach every project indyvidualy</p>
 						</div>
 					</div>
 
 					<div className="col-md-5 col-sm-6">
-						<div className="box">
+						<div className="box" id="box-2">
 							<div className="circle">
 								<FontAwesomeIcon className="icon" icon={faFileCode} size="2x" />
 							</div>
-							<h3> Web dev</h3>
+							<h3> Web Development</h3>
 
 							<p>Newest trends, best performance</p>
 						</div>
 					</div>
 
 					<div className=" col-md-5 col-sm-6">
-						<div className="box">
+						<div className="box" id="box-3">
 							<div className="circle">
 								<FontAwesomeIcon
 									className="icon"
@@ -39,13 +39,13 @@ const Services = () => {
 									size="2x"
 								/>
 							</div>
-							<h3> Fb Ads</h3>
-							<p>Catch new potential clients.</p>
+							<h3> Facebook Ads</h3>
+							<p>Catch new potential clients</p>
 						</div>
 					</div>
 
 					<div className=" col-md-5 col-sm-6">
-						<div className="box">
+						<div className="box" id="box-4">
 							<div className="circle">
 								<FontAwesomeIcon className="icon" icon={faGoogle} size="2x" />
 							</div>

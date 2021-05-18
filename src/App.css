@@ -2,7 +2,7 @@
 
 :root {
 	--primary-white: #ffffff;
-	--primary-orange: #d18f00;
+	--primary-orange: #d49100;
 	--primary-dark: #080808;
 	--primary-red: #ef4035;
 	--primary-hover-red: #f33501;
@@ -11,7 +11,7 @@
 	--primary-grey: #ccd1d9;
 	--primary-black: #000000;
 	--primary-transparent-black: rgba(0, 0, 0, 0.8);
-	--primary-green: green;
+	--primary-green: #008000;
 	--primary-hover-red: #f33501;
 }
 
@@ -22,6 +22,7 @@ body {
 /******************* SYLING NAVBAR*********************************/
 nav {
 	z-index: 2;
+	background: black;
 }
 .logo {
 	width: 16.25rem;
@@ -46,7 +47,7 @@ nav ul li {
 	color: var(--primary-white) !important;
 	border-bottom: 0.1875rem solid var(--primary-dark);
 	border-radius: 0.1rem;
-	font-size: 1rem;
+	font-size: 0.8rem;
 }
 
 .navbar-brand {
@@ -57,6 +58,10 @@ nav ul li {
 @media screen and (max-width: 768px) {
 	.navbar-brand {
 		width: 7rem;
+	}
+
+	.navbar-nav > li > a {
+		text-align: center;
 	}
 }
 
@@ -73,10 +78,12 @@ nav ul li {
 
 .header-wrapper {
 	position: relative;
-	background: url(./wall-and-laptop-background.jpg);
+	background: url(./images//header-screen.jpg);
+
 	background-size: cover;
 	background-position: center;
-	height: 90vh;
+	height: 100vh;
+	top: -2rem;
 }
 
 .main-info {
@@ -98,6 +105,11 @@ nav ul li {
 	text-transform: uppercase;
 }
 
+@media screen and (max-width: 768px) {
+	.header-wrapper {
+		top: 2rem;
+	}
+}
 /*--------------------------Typed Text ------------------- */
 
 .typed-text {
@@ -107,7 +119,7 @@ nav ul li {
 
 @media screen and (max-width: 768px) {
 	.main-info h1 {
-		font-size: 1.7rem !important;
+		font-size: 2rem !important;
 	}
 	.typed-text {
 		font-size: 1.3rem !important;
@@ -116,7 +128,7 @@ nav ul li {
 /*--------------------------Header main offer button ------------------- */
 
 .btn-main-offer {
-	border: 1px solid var(--primary-red);
+	border: 1px solid var(--primary-green);
 	text-transform: uppercase;
 	border-radius: 0;
 	padding: 0.625rem 0.75rem 0.75rem 0.75rem;
@@ -126,7 +138,7 @@ nav ul li {
 
 .btn-main-offer:hover {
 	text-decoration: none;
-	background-color: var(--primary-hover-red);
+	background-color: var(--primary-green);
 	color: var(--primary-white);
 	transition: 0.2s ease-in-out;
 }
@@ -151,33 +163,49 @@ nav ul li {
 	align-items: center;
 }
 
+.about-paragraph {
+	font-size: 1.5rem;
+}
+
 .profile-img {
 	width: 16rem;
 	height: s;
 	border-radius: 50%;
 	padding: 0.3rem;
-	border: 1px solid var(--primary-orange);
-	margin-top: 1.5rem;
+	border: 1px solid var(--primary-green);
+	margin-top: 5rem;
 }
 
 .about-heading {
 	color: var(--primary-orange);
 	text-transform: uppercase;
+	font-weight: 700;
 }
 
 @media screen and (max-width: 468px) {
 	.profile-img {
 		width: 10rem;
 	}
+	.about-paragraph {
+		font-size: 1rem;
+	}
 }
 
+@media screen and (max-width: 768px) {
+	.profile-img {
+		width: 10rem;
+	}
+	.about-paragraph {
+		font-size: 1rem;
+	}
+}
 /*--------------------------Services ------------------- */
 
 .services {
 	text-align: center;
 	justify-content: center;
 	padding-bottom: 2rem;
-	background: var(--primary-light-grey);
+	background: var(--primary-dark);
 }
 
 .services .row {
@@ -186,8 +214,18 @@ nav ul li {
 }
 
 .services h1 {
-	color: var(--primary-dark);
+	color: var(--primary-orange);
 	text-transform: uppercase;
+	font-weight: 700;
+}
+
+.box h3 {
+	font-weight: 900;
+	font-size: 1.8rem;
+}
+.box p {
+	font-weight: 900;
+	font-size: 1.5rem;
 }
 
 .services .circle {
@@ -213,15 +251,30 @@ nav ul li {
 	border-bottom: 0.3125rem solid var(--primary-orange);
 	padding: 0.625rem;
 	margin: 0.875rem;
-	background: var(--primary-white);
+
 	margin-top: 2rem;
+}
+
+.services #box-1 {
+	background: url(./images/services/uiux.jpg);
+}
+.services #box-2 {
+	background: url(./images/services/prog.jpg);
+}
+
+.services #box-3 {
+	background: url(./images/services/fbads.jpg);
+}
+
+.services #box-4 {
+	background: url(./images/services/goads.jpg);
 }
 
 .services .box:hover {
 	background: var(--primary-orange);
 	border-bottom: 0.3125rem solid var(--primary-dark);
-	transform: scale(1.1);
-	transition: 0.3s linear;
+	transform: scale(1.2);
+	transition: 0.3s ease-in-out;
 }
 
 .services .box:hover .icon {
@@ -246,6 +299,7 @@ nav ul li {
 .experience h1 {
 	text-transform: uppercase;
 	color: var(--primary-orange);
+	font-weight: 700;
 }
 
 .experience-wrapper::before {
@@ -281,7 +335,7 @@ nav ul li {
 	height: 1rem;
 	border-radius: 50%;
 	border: 0.3125rem solid var(--primary-dark);
-	background: var(--primary-orange);
+	background: var(--primary-green);
 	margin-top: 0.9rem;
 	z-index: 3;
 }
@@ -295,7 +349,8 @@ nav ul li {
 
 .timeline-content h3 {
 	margin-top: 0.3125rem;
-	color: var(--primary-red);
+	color: var(--primary-orange);
+	font-weight: 700;
 }
 
 /*-------------------- MEDIA TIMELINE----------------------*/
@@ -324,12 +379,15 @@ nav ul li {
 /*-------------------- Portfolio----------------------*/
 
 .portfolio-wrapper {
-	background: var(--primary-light-grey);
-	padding: 3rem 0;
+	background: var(--primary-black);
+	padding-bottom: 12rem;
+	padding-top: 5rem;
 }
 
 .portfolio-wrapper h1 {
 	color: var(--primary-orange);
+	font-weight: 700;
+	text-transform: uppercase;
 }
 
 .portfolio-image {
@@ -342,6 +400,12 @@ nav ul li {
 .portfolio-image-box {
 	position: relative;
 	margin: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+	.portfolio-wrapper {
+		padding: 3rem 0;
+	}
 }
 
 /*-------------------- Overflow Portfolio Box----------------------*/
@@ -360,6 +424,10 @@ nav ul li {
 .portfolio-image-box:hover .overflow {
 	opacity: 60%;
 	transition: 0.3s ease-in-out;
+}
+
+.popupbox-wrapper {
+	margin-top: 7rem;
 }
 
 .portfolio-icon {
@@ -421,27 +489,27 @@ nav ul li {
 	}
 }
 
-/*--------------------- Testimonials --------------------------*/
+/*--------------------- Progress--------------------------*/
 
-.testimonials {
+.progres {
 	background-size: cover;
 	text-align: center;
-	padding-bottom: 4rem;
-	margin-bottom: 0;
+	padding: 3rem 0;
+
 	width: 100%;
 }
 
-.testimonials h1 {
+.progres h1 {
 	color: var(--primary-orange);
-	padding: 3rem 0;
+	padding: 2rem 0;
 	text-transform: uppercase;
+	font-weight: 700;
 }
 
-.testimonials-content {
+.progres-content {
 	text-align: center;
 	max-width: 70rem;
 	margin: 0 auto 2rem auto;
-	background: var(--primary-transparent-black);
 }
 
 .myCarousel {
@@ -465,12 +533,15 @@ nav ul li {
 }
 
 .myCarousel p {
-	color: var(--primary-grey);
+	color: var(--primary-black);
+}
+.carousel .thumbs-wrapper {
+	margin: 0 !important;
+	margin-left: -2rem !important;
 }
 
 .carousel .slide img {
-	width: 10rem !important;
-	border-radius: 50%;
+	width: 20% !important;
 }
 
 .carousel .slide {
@@ -494,6 +565,7 @@ nav ul li {
 	color: var(--primary-orange);
 	padding: 1.3rem 0;
 	text-transform: uppercase;
+	font-weight: 500;
 }
 
 .contacts p {
@@ -604,4 +676,27 @@ textarea.form-control {
 	.contacts p {
 		padding: 0 0.4rem;
 	}
+}
+
+/*---------------------------- FOOTER COMPONENT -------------------------*/
+
+.footer {
+	background: var(--primary-black);
+	color: var(--primary-dark-grey);
+	padding: 3rem;
+}
+
+.footer a {
+	text-decoration: none;
+	color: var(--primary-dark-grey);
+}
+
+.footer a:hover {
+	text-decoration: none;
+	color: var(--primary-orange);
+	cursor: pointer;
+}
+
+.footer p {
+	margin-bottom: 0;
 }

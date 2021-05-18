@@ -12,40 +12,7 @@ import { PopupboxManager, PopupboxContainer } from "react-popupbox";
 import "react-popupbox/dist/react-popupbox.css";
 
 const Portfolio = () => {
-	// First popup Houser -----------------------------------------------------------//
-	const openPopupboxHouser = () => {
-		const content = (
-			<>
-				<img
-					className="portfolio-image-popupbox"
-					src={houser}
-					alt="Houser Project popup"
-				/>
-				<p>Estate project usign slide effect on main content.</p>
-				<b>Github: </b>
-				<a
-					className="hyper-link"
-					href="/"
-					onClick={() =>
-						window.open("https://github.com/mr-krystian-stawarczyk/Houser")
-					}
-				>
-					https://github.com/mr-krystian-stawarczyk/Houser
-				</a>
-			</>
-		);
-		PopupboxManager.open({ content });
-	};
-	const popupboxConfigHouser = {
-		titleBar: {
-			enable: true,
-			text: "Houser slider effect",
-		},
-		fadeIn: true,
-		fadeInSpeed: 500,
-	};
-
-	// Second popup moneyflow ---------------------------------------------------------------//
+	// 1st popup moneyflow ---------------------------------------------------------------//
 
 	const openPopupboxMoney = () => {
 		const content = (
@@ -79,7 +46,40 @@ const Portfolio = () => {
 		fadeInSpeed: 500,
 	};
 
-	// Third popup crypto-tracker ---------------------------------------------------------------//
+	// 2nd popup Houser -----------------------------------------------------------//
+	const openPopupboxHouser = () => {
+		const content = (
+			<>
+				<img
+					className="portfolio-image-popupbox"
+					src={houser}
+					alt="Houser Project popup"
+				/>
+				<p>Estate project usign slide effect on main content.</p>
+				<b>Github: </b>
+				<a
+					className="hyper-link"
+					href="/"
+					onClick={() =>
+						window.open("https://github.com/mr-krystian-stawarczyk/Houser")
+					}
+				>
+					https://github.com/mr-krystian-stawarczyk/Houser
+				</a>
+			</>
+		);
+		PopupboxManager.open({ content });
+	};
+	const popupboxConfigHouser = {
+		titleBar: {
+			enable: true,
+			text: "Houser slider effect",
+		},
+		fadeIn: true,
+		fadeInSpeed: 500,
+	};
+
+	// 3rd popup crypto-tracker ---------------------------------------------------------------//
 
 	const openPopupboxCrypto = () => {
 		const content = (
@@ -115,7 +115,7 @@ const Portfolio = () => {
 		fadeInSpeed: 500,
 	};
 
-	// Fourth project to-do list ---------------------------------------------------------------//
+	// 4th project to-do list ---------------------------------------------------------------//
 
 	const openPopupboxTodo = () => {
 		const content = (
@@ -154,26 +154,26 @@ const Portfolio = () => {
 
 	/*-------------------------------------------------------------------------------------*/
 	return (
-		<div className="portfolio-wrapper">
+		<div className="portfolio-wrapper" id="portfolio">
 			<div className="container">
 				<h1 className="text-uppercase text-center py-5">Portfolio</h1>
 				<div className="image-box-wrapper row justify-content-center">
-					<div className="portfolio-image-box" onClick={openPopupboxHouser}>
-						<img
-							className="portfolio-image"
-							src={houser}
-							alt="estate project"
-						/>
-						<div className="overflow"></div>
-						<FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
-					</div>
-
 					<div className="portfolio-image-box" onClick={openPopupboxMoney}>
 						<img
 							className="portfolio-image"
 							src={cashapp}
 							alt="money-flow project"
 						/>{" "}
+						<div className="overflow"></div>
+						<FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
+					</div>
+
+					<div className="portfolio-image-box" onClick={openPopupboxHouser}>
+						<img
+							className="portfolio-image"
+							src={houser}
+							alt="estate project"
+						/>
 						<div className="overflow"></div>
 						<FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
 					</div>
@@ -195,8 +195,9 @@ const Portfolio = () => {
 					</div>
 				</div>
 			</div>
-			<PopupboxContainer {...popupboxConfigHouser} />
 			<PopupboxContainer {...popupboxConfigMoney} />
+			<PopupboxContainer {...popupboxConfigHouser} />
+
 			<PopupboxContainer {...popupboxConfigCrypto} />
 			<PopupboxContainer {...popupboxConfigTodo} />
 		</div>

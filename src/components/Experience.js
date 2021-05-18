@@ -10,41 +10,35 @@ const Experience = () => {
 				<div className="timeline-block timeline-block-right">
 					<div className="marker"></div>
 					<div className="timeline-content">
-						<h3>2014-2015</h3>
+						<h3>2014-2017</h3>
 						<p>
-							Opisz bycie sprzedawca w polsce o tym jak nauczyles sie kontaktu z
-							klientami i komunikacji miedzyludzkiej. Media expert, decathlon o
-							sprzedawaniu sportowym.
+							Studying at University of Economics in Wrocław, many side jobs
+							including running section supervisor in Decathlon.
 						</p>
 					</div>
 				</div>
 				<div className="timeline-block timeline-block-left">
 					<div className="marker"></div>
 					<div className="timeline-content">
-						<h3>2015-2016</h3>
-						<p>
-							O tym jak przyjechales do niemiec i pracy w holandi w dsv, jak
-							spodobalo ci sie zycie tutaj itp itd.
-						</p>
+						<h3>2015-2017</h3>
+						<p>Notebooks salesman in Poland.</p>
 					</div>
 				</div>
 				<div className="timeline-block timeline-block-right">
 					<div className="marker"></div>
 					<div className="timeline-content">
-						<h3>2015-2016</h3>
-						<p>
-							O rozpoczeciu pracy jako operator lasera. Jakie to fascynujace i
-							co dzieki temu sie nauczylem.
-						</p>
+						<h3>2017-2019</h3>
+						<p>Work as Reachtruck driver in Netherland.</p>
 					</div>
 				</div>
 				<div className="timeline-block timeline-block-left">
 					<div className="marker"></div>
 					<div className="timeline-content">
-						<h3>2015-2016</h3>
+						<h3>2019-2021</h3>
 						<p>
-							Opisz rozpoczecie nauki programowania i jak to wygladalo.Jeszcze
-							wiecej tekstu potrzeba.
+							Working as a laser operator in Netherland. First steps with web
+							development courses, 06-2020 Codecademy Full carrer path project
+							started.
 						</p>
 					</div>
 				</div>
@@ -52,20 +46,20 @@ const Experience = () => {
 				<div className="timeline-block timeline-block-right">
 					<div className="marker"></div>
 					<div className="timeline-content">
-						<h3>2018-2021</h3>
+						<h3>02-2021</h3>
 						<p>
-							Zdobycie certyfikatu na codecademy i dalsza nauka czego sie
-							nauczyles dzieki temu itp itd.
+							Finished Codecademy Pro course for Web Development Career Path
+							including certificates.
 						</p>
 					</div>
 				</div>
 				<div className="timeline-block timeline-block-left">
 					<div className="marker"></div>
 					<div className="timeline-content">
-						<h3>2021-Current</h3>
+						<h3>04.2021-Current</h3>
 						<p>
-							Chwila obecna.Cupidatat Lorem consectetur veniam enim incididunt
-							proident consectetur dolore enim ullamco.
+							Finishing existing projects and courses, looking for a full time
+							front-end developer job offers.
 						</p>
 					</div>
 				</div>
