@@ -5,7 +5,7 @@ import App from "./App";
 
 ReactDOM.render(
 	<React.StrictMode>
-		<App path="./src/App.js"/>
+		<App exact="./src/App.js"/>
 	</React.StrictMode>,
 	document.getElementById("root")
 );
