@@ -34,7 +34,6 @@ nav {
 nav a.nav-link {
 	letter-spacing: 0.0375rem;
 	cursor: pointer;
-	font-size: 0.8rem;
 }
 
 nav ul li {
@@ -47,7 +46,7 @@ nav ul li {
 	color: var(--primary-white) !important;
 	border-bottom: 0.1875rem solid var(--primary-dark);
 	border-radius: 0.1rem;
-	font-size: 0.8rem;
+	font-size: 0.9rem;
 }
 
 .navbar-brand {
@@ -345,6 +344,10 @@ nav ul li {
 	padding: 0 0.9375rem;
 	color: var(--primary-dark-grey);
 	direction: ltr;
+}
+
+.timeline-content:hover {
+	font-weight: 900;
 }
 
 .timeline-content h3 {
