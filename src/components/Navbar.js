@@ -29,9 +29,9 @@ const Navbar = () => {
 		fixed-top"
 		>
 			<div className="container">
-				<a className="navbar-brand" href="#">
+				<div className="navbar-brand">
 					<img className="logo" src={logo} alt="logo?" />
-				</a>
+				</div>
 				<button
 					className="navbar-toggler "
 					type="button"

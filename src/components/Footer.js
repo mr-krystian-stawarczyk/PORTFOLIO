@@ -21,7 +21,7 @@ const Footer = () => {
 							<p>Fasanenstr.10 41334 Nettetal </p>
 						</div>
 						<div className="d-flex">
-							<a href="#"> 00 48-726-897-493 EN | DE | PL </a>
+							<p> 00 48-726-897-493 EN | DE | PL </p>
 						</div>
 						<div className="d-flex">
 							<p>mr.krystian@stawarczyk@gmail.com</p>

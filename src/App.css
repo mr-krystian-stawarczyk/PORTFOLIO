@@ -703,3 +703,8 @@ textarea.form-control {
 .footer p {
 	margin-bottom: 0;
 }
+
+.footer p:hover {
+	text-decoration: none;
+	color: var(--primary-orange);
+}
