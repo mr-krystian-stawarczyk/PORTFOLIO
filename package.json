@@ -1,7 +1,7 @@
 {
 	"name": "portfolio-project",
 	"version": "0.1.0",
-	"private": true,
+	"private": false,
 	"dependencies": {
 		"homepage" : "https://mr-krystian-stawarczyk.github.io/Porfolio/public/index.html",
 		"@fortawesome/fontawesome-svg-core": "^1.2.35",
