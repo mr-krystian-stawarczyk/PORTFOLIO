@@ -1,1 +1,3 @@
-[a link](https://github.com/mr-krystian-stawarczyk/PORTFOLIO/blob/master/public/index.html)
+
+
+<meta http-equiv="Refresh" content="2; url=public/index.html">
