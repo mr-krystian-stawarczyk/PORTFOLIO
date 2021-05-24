@@ -15,7 +15,7 @@ import { BrowserRouter as Router } from "react-router-dom";
 function App() {
 	return (
 		<>
-			<Router basename="./">
+			<Router basename="/Portfolio">
 				<Particles
 					className="particles-canvas"
 					params={{
