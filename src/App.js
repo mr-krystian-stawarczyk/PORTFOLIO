@@ -10,41 +10,44 @@ import Portfolio from "./components/Portfolio";
 import Progress from "./components/Progress";
 import Contacts from "./components/Contacts";
 import Footer from "./components/Footer";
+import { BrowserRouter as Router } from "react-router-dom";
 
 function App() {
 	return (
 		<>
-			<Particles
-				className="particles-canvas"
-				params={{
-					particles: {
-						number: {
-							value: 30,
-							density: {
-								enable: true,
-								value_area: 700,
+			<Router basename="./">
+				<Particles
+					className="particles-canvas"
+					params={{
+						particles: {
+							number: {
+								value: 30,
+								density: {
+									enable: true,
+									value_area: 700,
+								},
+							},
+							shape: {
+								type: "circle",
+								stroke: {
+									width: 2,
+									color: "#f9ab00",
+									opacity: 0.1,
+								},
 							},
 						},
-						shape: {
-							type: "circle",
-							stroke: {
-								width: 2,
-								color: "#f9ab00",
-								opacity: 0.1,
-							},
-						},
-					},
-				}}
-			/>
-			<Navbar />
-			<Header />
-			<About />
-			<Services />
-			<Experience />
-			<Portfolio />
-			<Progress />
-			<Contacts />
-			<Footer />
+					}}
+				/>
+				<Navbar />
+				<Header />
+				<About />
+				<Services />
+				<Experience />
+				<Portfolio />
+				<Progress />
+				<Contacts />
+				<Footer />
+			</Router>
 		</>
 	);
 }
