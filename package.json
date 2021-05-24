@@ -1,9 +1,8 @@
-{
+{       "homepage" : "https://mr-krystian-stawarczyk.github.io/Porfolio/",
 	"name": "portfolio-project",
 	"version": "0.1.0",
-	"private": false,
+	"private": true,
 	"dependencies": {
-		"homepage" : "https://mr-krystian-stawarczyk.github.io/Porfolio/",
 		"@fortawesome/fontawesome-svg-core": "^1.2.35",
 		"@fortawesome/free-brands-svg-icons": "^5.15.3",
 		"@fortawesome/free-solid-svg-icons": "^5.15.3",
