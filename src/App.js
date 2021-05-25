@@ -10,12 +10,12 @@ import Portfolio from "./components/Portfolio";
 import Progress from "./components/Progress";
 import Contacts from "./components/Contacts";
 import Footer from "./components/Footer";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
 
 function App() {
 	return (
-		<Router basename="/PORTFOLIO">
-			<Route exact path="/">
+		<>
+			<Router basename="/PORTFOLIO">
 				<Particles
 					className="particles-canvas"
 					params={{
@@ -47,8 +47,8 @@ function App() {
 				<Progress />
 				<Contacts />
 				<Footer />
-			</Route>
-		</Router>
+			</Router>
+		</>
 	);
 }
 
