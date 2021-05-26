@@ -26,7 +26,10 @@ nav {
 }
 .logo {
 	width: 16.25rem;
-	margin-top: 1rem;
+}
+
+.logo:hover:active {
+	border-bottom: 1px solid var(--primary-orange);
 }
 
 /******************* MENU LINKS ************************************/
@@ -52,16 +55,7 @@ nav ul li {
 .navbar-brand {
 	max-width: 17.25rem;
 	padding: 0 !important;
-	height: 6rem !important;
-}
-@media screen and (max-width: 768px) {
-	.navbar-brand {
-		width: 7rem;
-	}
-
-	.navbar-nav > li > a {
-		text-align: center;
-	}
+	height: 5rem !important;
 }
 
 .navbar-nav > li > a.active,
@@ -71,6 +65,44 @@ nav ul li {
 
 .navbar-nav > li > a:hover {
 	border-bottom: 0.1875rem solid var(--primary-orange);
+}
+
+@media (max-width: 500px) {
+	.main-info {
+		margin-bottom: 14rem;
+	}
+}
+
+@media (max-height: 500px) {
+	.main-info {
+		margin-top: 5rem;
+	}
+	.typed-text {
+		margin-top: 6.2rem;
+	}
+}
+
+@media (max-width: 768px) {
+	.navbar-nav > li > a {
+		text-align: center;
+	}
+
+	.logo {
+		height: 4rem;
+		max-width: 14rem;
+	}
+	.main-info {
+		margin-bottom: 14rem;
+	}
+}
+
+@media (max-width: 1024px) {
+	.main-info {
+		margin-bottom: 14rem;
+	}
+	.btn-main-offer {
+		font-size: 2rem;
+	}
 }
 
 /******************* SYLING HEADER*********************************/
@@ -309,7 +341,7 @@ nav ul li {
 	margin-left: -0.00625rem;
 	width: 0.125rem;
 	height: 100%;
-	background: var(--primary-grey);
+	border: 1px dotted var(--primary-grey);
 	z-index: 1;
 }
 

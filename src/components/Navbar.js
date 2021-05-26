@@ -29,9 +29,11 @@ const Navbar = () => {
 		fixed-top"
 		>
 			<div className="container">
-				<div className="navbar-brand">
-					<img className="logo" src={logo} alt="logo?" />
-				</div>
+				<Link smooth={true} to="home" href="#" onClick={handleClick}>
+					<div className="navbar-brand">
+						<img className="logo" src={logo} alt="logo?" />
+					</div>
+				</Link>
 				<button
 					className="navbar-toggler "
 					type="button"
@@ -77,7 +79,7 @@ const Navbar = () => {
 						<li className="nav-item">
 							<Link
 								className="nav-link"
-								offset={-110}
+								offset={-50}
 								smooth={true}
 								to="services"
 								href="#"
@@ -103,7 +105,7 @@ const Navbar = () => {
 						<li className="nav-item">
 							<Link
 								className="nav-link"
-								offset={-110}
+								offset={-80}
 								smooth={true}
 								to="portfolio"
 								href="#"
@@ -129,7 +131,7 @@ const Navbar = () => {
 						<li className="nav-item">
 							<Link
 								className="nav-link"
-								offset={-110}
+								offset={-80}
 								smooth={true}
 								to="contacts"
 								href="#"
